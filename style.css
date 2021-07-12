@@ -1,0 +1,210 @@
+/*varables*/
+:root{
+    --darkgrey: #292929; 
+    --textlightgrey: #B9B9B9; 
+}  
+
+/*base styles*/
+body{
+    background: var(--darkgrey);
+    color: var(--textlightgrey);
+    margin: 0;
+}
+
+.hidden{
+    display: none;
+}
+.datePicker{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1.3fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 60px;
+}
+.nextWeek, .thisWeek, .lastWeek{
+    margin: 0;
+    width: 80px; 
+    height: 10px;
+    font-size: 12px;
+}
+.nextWeek{
+    grid-column: 3/4;
+
+}
+.thisWeek{
+    grid-column: 2/3;
+
+}
+.lastWeek{
+    grid-column: 1/2;
+}
+.pickedWeek{
+    font-size: 18px;
+    width: 90px;
+    text-decoration: underline solid 1px #f29035;
+    text-underline-offset: 0.25em;    
+    align-self: start;
+    grid-row: 2;
+}
+
+
+.containerForMatches{
+    background-color: #F6F6F6;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 40px;
+    border-radius: 40px 40px 0 0;
+    padding-bottom: 50px;
+
+}
+
+
+.currentPickedDateContainer{
+    color: black;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: #C4C4C4;
+    margin: 0px;
+    margin-top: 5px;
+}
+.firstDate{
+    margin-left: 40px;
+}
+.secondDate{
+    margin-right: 40px;
+}
+ .firstDate, .secondDate{
+    margin-top: 20px
+}
+
+
+
+.matchesContainer{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+    height: 100%;
+}
+.remainingMatches, .currentlyLiveMatches{
+    background-color: #C4C4C4;
+    color: black;
+    align-self: center;
+    justify-self: center;
+    border-radius: 20px;
+}
+.currentlyLiveMatches{
+    min-width: 310px;
+    width: 70%;
+    height: 80%;
+    margin-bottom:40px;
+    position: relative;
+}
+
+.currentlyLiveMatches > .match{
+    margin: 0;
+    margin-top: 10px;
+    margin: 12px 3% 13px 3%;
+
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #BA0909;
+    display: inline-block;
+    position: relative;
+    top:8px;
+    left:10px
+}
+.currentlyLiveMatches > h4{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: 6px;
+    left: 13px
+    
+}
+.currentlyLiveMatches > h6{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.remainingMatches{
+    min-width: 310px;
+    width: 90%;
+}
+.match{
+    background-color: #F6F6F6 ;
+    margin: 25px 3% 13px 3%;
+    border-radius: 20px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    overflow: hidden;
+}
+.time{
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 100;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.date{
+    margin:0;
+    font-weight: 300;
+    font-size: 8px;
+}
+.homeTeam{
+    justify-self: end;
+    font-size: 12px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.awayTeam{
+    font-size: 12px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.awayScore{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.homeScore{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.homeScore, .awayScore, .dots{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+}
+/*fonts*/
+body{
+    font-family: Roboto;
+}
+.firstDate, .secondDate{
+    
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/*desktop layout*/
